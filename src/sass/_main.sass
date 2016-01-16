@@ -1,1 +1,35 @@
 // Normally mainpage styles
+body
+	margin: 0
+	padding: 0
+.bann
+	text-align: center 
+.superslider
+	position: relative
+	+unselectable
+	*:focus
+		outline: none
+	&__next,&__prev
+		position: absolute
+		left: 20px 
+		right: 20px 
+		top: 50% 
+		width: 20px 
+		height: 75px 
+		z-index: 20 
+		margin-top: -38px 
+		cursor: pointer
+		+s(prev)
+	&__next
+		left: auto 
+		right: 20px 
+		+s(next)
+	&__slide
+		width: 300px 
+		opacity: .5
+		transition: all .3s linear
+		cursor: pointer
+		&.slick-current
+			opacity: 1 
+		img
+			width: 100% 
